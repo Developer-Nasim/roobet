@@ -39,6 +39,8 @@
     margin: 10,
     center:true,
     items: 3,
+    smartSpeed:1000,
+    fluidSpeed:1000,
     navText: [
       '<i class="fa fa-angle-left"></i>',
       '<i class="fa fa-angle-right"></i>'

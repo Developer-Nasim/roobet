@@ -122,6 +122,9 @@ li {
   width: 100%;
   z-index: 99;  
 }
+.header-area > .container {
+  max-width: 1670px;
+}
 .menu-area {
   display: flex;
   align-items: center;
@@ -133,9 +136,10 @@ li {
   display: none;
 }
 
-.menu-area  nav {
+.menu-area nav {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 90px;
 }
 
@@ -143,12 +147,18 @@ li {
   position: absolute;
   right: 0;
 }
+.menu-area nav a.logo-area {
+  max-width: 62px;
+}
 .menu-area nav ul {
   display: flex;
   align-items: center;
+  width: 45%;
   gap: 45px;
 }
-
+.menu-area nav ul:first-child{
+  justify-content: flex-end;
+}
 .menu-area nav ul li a {
   color: #787985;
   font-weight: 500;
@@ -271,11 +281,11 @@ li {
   top: 20px;
   width: 40px;
   height: 40px;
-  background: red;
+  /* background: red; */
   text-align: center;
   line-height: 36px;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 36px;
   color: var(--white);
   box-shadow: 0px 0px 17px -2px var(--boxShadowColor);
 }
@@ -292,11 +302,12 @@ li {
 .hero-widgets {
   display: flex;
   align-items: flex-start;
-  gap: 5%;
+  justify-content: center;
+  gap: 70px;
 }
 
 .hero-left-widgets {
-  width: 75%;
+  width: 70%;
   display: flex;
   gap: 15px;
 }
@@ -333,13 +344,14 @@ li {
   transform: scale(1.111111);
 }
 .hero-right-widgets {
-  width: 30%;
+  width: 21%;
 }
 
 .hero-right-widgets img {
   display: block;
   width: 100%;
   margin-top: 120px;
+  max-width: 266px;
 }
 
 .section-title {
@@ -372,7 +384,7 @@ section.hero-area:after {
 }
 .howto-area {
   position: relative;
-  padding: 200px 0 300px 0;
+  padding: 150px 0px 220px;
   background: linear-gradient(0deg, #626691, #565A8B);
   z-index: 2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -396,7 +408,7 @@ section.hero-area:after {
 
 .howto-content {
   text-align: center;
-  min-width: 210px;
+  min-width: 250px;
 }
 
 .howto-content h2 {
@@ -443,7 +455,7 @@ section.offer-area::before {
 }
 .offer-content h3 {
   color: #DADDFF;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -478,14 +490,14 @@ section.offer-area::before {
 section.offer-area > img {
   position: absolute;
   right: 0;
-  top: 10%;
-  max-width: 350px;
+  top: 18%;
+  max-width: 250px;
   z-index: -1;
 }
 
 .single-offer {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   background: linear-gradient(90deg, #121539 30%, #121539 45%, #0B0D23 100%);
   border-radius: 15px;
   position: relative;
@@ -502,7 +514,7 @@ section.offer-area > img {
 }
 
 .offer-img img {
-  max-width: 240px;
+  max-width: 220px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -561,11 +573,11 @@ section.viprewards-area {
 }
 
 .viprewards-wrap > img {
-  max-width: 435px;
+  max-width: 350px;
 }
 
 .viprewards-content {
-  width: calc(100% - 435px);
+  width: calc(100% - 350px);
   text-align: center;
 }
 
@@ -580,7 +592,7 @@ section.viprewards-area {
   margin-top: 40px;
   background: #fff;
   color: #0E103E;
-  padding: 25px 80px;
+  padding: 25px 70px;
 }
 
 footer {
@@ -697,6 +709,7 @@ img.hero-wrap-img {
   display: block;
   margin-top: -50px;
   width: 100%;
+  max-width: 230px;
 }
 .rewards-area {
   background: linear-gradient(0deg, #1960CF, #1F78FF);
@@ -740,11 +753,11 @@ img.hero-wrap-img {
   color: #1F78FF;
   font-size: 20px;
   font-weight: 600;
-  padding: 3px;
+  padding: 2px;
 }
 
 .rewards-wrap ul li div:first-child {
-  padding: 7px;
+  padding: 5px;
   margin-right: -10px;
   z-index: 2;
 }
@@ -821,6 +834,8 @@ img.hero-wrap-img {
 
 .leaderboard img.hero-wrap-img {
   margin-top: 20px;
+  margin-left: auto;
+  max-width: 230px;
 }
 .leaders-area {
   position: relative;
@@ -1043,13 +1058,33 @@ section.leaderboard-roobet .viprewards-content h4 {
 .hero-slider .owl-item {
   position: relative;
   margin: 50px 0;
+  transition: .3s;
   z-index: 1;
 }
 .hero-slider .owl-item.active.center { 
   z-index: 2;
   transform: scale(1.2);
 }
+.hero-slider {
+  z-index: 2;
+}
 
+.hero-slider:after,.hero-slider:before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 71%;
+  background: linear-gradient(90deg, #030119, #0905288f, transparent);
+  top: 10%;
+  left: 0;
+  z-index: 2;
+}
+
+.hero-slider:before {
+  background: linear-gradient(-90deg, #030119, #0905288f, transparent);
+  left: auto;
+  right: 0;
+}
 
 
 

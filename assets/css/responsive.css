@@ -3,6 +3,10 @@
     .howto-area > img { 
         top: 10%;
     }
+    .hero-slider{
+        max-width: 1000px;
+        margin: auto;
+    }
 
 }
 
@@ -64,6 +68,10 @@
         padding: 210px 0 180px 0;
     }
 
+    .hero-slider{
+        max-width: 829px;
+        margin: auto;
+    }
 
 
 
@@ -210,7 +218,10 @@
     .howto-page section.hero-area {
         padding-bottom: 50px;
     }
-
+    .hero-slider{
+        max-width: 744px;
+        margin: auto;
+    }
 
 
 
@@ -558,7 +569,9 @@ img.hero-wrap-img {
   section.leaderboard-roobet { 
     padding-top: 50px;
 }
-
+.hero-slider:after, .hero-slider:before{
+    display: none;
+}
 
 
 
