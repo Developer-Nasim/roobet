@@ -207,7 +207,9 @@
     .all-leader-title {
         margin-top: 50px;
     }
-
+    .howto-page section.hero-area {
+        padding-bottom: 50px;
+    }
 
 
 
@@ -435,29 +437,6 @@
     .footer-social > div > a {
         margin-top: -30px;
     }
-    .owl-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        min-height: 15px;
-        margin-bottom: 30px;
-    }
-    
-    .owl-dots .owl-dot {
-        width: 8px;
-        height: 8px;
-        display: block;
-        background: #2F2C6C;
-        border-radius: 50%;
-        transition: .3s;
-    }
-    
-    .owl-dots .owl-dot.active {
-        width: 12px;
-        height: 12px;
-        background: #DDB440;
-    }
     .offer-content:before { 
         height: 80%; 
         width: 98%;
@@ -566,8 +545,19 @@ img.hero-wrap-img {
     font-size: 12px;
 }
 
-
-
+.hero-slider .owl-item { 
+    margin: 0px 0; 
+  }
+  .hero-slider .owl-item.active.center { 
+    z-index: 2;
+    transform: scale(1);
+  }
+  .howto-page section.hero-area{
+    padding-bottom: 50px;
+  }
+  section.leaderboard-roobet { 
+    padding-top: 50px;
+}
 
 
 

@@ -983,12 +983,72 @@ img.hero-wrap-img {
 
 
 
+section.leaderboard-roobet {
+  background: #DDB440;
+  padding-top: 100px;
+}
 
+section.leaderboard-roobet .viprewards-content {
+  margin: auto;
+  margin-bottom: 50px;
+}
 
+section.leaderboard-roobet > img {
+  display: block;
+  width: 100%;
+}
 
+section.leaderboard-roobet .viprewards-content > img {
+  margin-bottom: 15px;
+}
 
+section.leaderboard-roobet .viprewards-content h4 {
+  margin-bottom: 30px;
+}
 
+.leaderboard-roobet-wrap > img {
+  display: block;
+  width: 100%;
+}
+.howto-page section.hero-area {
+  padding-bottom: 150px;
+}
 
+.owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 15px;
+  margin-bottom: 30px;
+}
+
+.owl-dots .owl-dot {
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #2F2C6C;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.owl-dots .owl-dot.active {
+  width: 12px;
+  height: 12px;
+  background: #DDB440;
+}
+.hero-slider .owl-dots {
+  margin-top: 30px;
+}
+.hero-slider .owl-item {
+  position: relative;
+  margin: 50px 0;
+  z-index: 1;
+}
+.hero-slider .owl-item.active.center { 
+  z-index: 2;
+  transform: scale(1.2);
+}
 
 
 

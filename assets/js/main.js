@@ -34,6 +34,30 @@
       }
     }
   });
+  $(".hero-slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    center:true,
+    items: 3,
+    navText: [
+      '<i class="fa fa-angle-left"></i>',
+      '<i class="fa fa-angle-right"></i>'
+    ],
+    nav: false,
+    dots: true,
+    responsive: {
+      0: {
+        margin: 0, 
+        items: 1
+      },
+      767: {
+        items: 3
+      },
+      992: {
+        items: 3
+      }
+    }
+  });
 
 function makeEd() { 
     let items = document.querySelectorAll('#panel')
