@@ -1112,12 +1112,14 @@ section.leaderboard-roobet .viprewards-content h4 {
 /* Section-Animation */
 
 section {
-  margin-top: -37px;
+  margin-top: 0px;
   transition: .5s;
   opacity: .2;
-  transform: scale(.9);
+  transform: scale(1.1);
 }
 section.visible_now {
+  position: relative;
+  z-index: 9;
   margin-top: 0;
   opacity: 1;
   transform: scale(1);
