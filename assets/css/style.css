@@ -1098,6 +1098,18 @@ section.leaderboard-roobet .viprewards-content h4 {
 
 
 
+/* Section-Animation */
+
+section {
+  transition: .3s;
+  opacity: .2;
+  transform: scale(.5);
+}
+section.visible_now {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 
 

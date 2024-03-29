@@ -81,7 +81,7 @@
     <main>
 
         <!-- Hero-area START -->
-        <section class=" hero-area " id="section1">
+        <section class=" hero-area visible_now">
             <div class="container">
                 <div class="row">
                     <div class="colg-lg-12">
@@ -110,7 +110,7 @@
 
 
         <!-- Howto-area START -->
-        <div class=" howto-area" id="section2">
+        <section class=" howto-area">
             <img src="assets/img/shape.png" alt="">
             <div class="container">
                 <div class="row">
@@ -130,12 +130,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Howto-area END -->
 
 
         <!-- Offer-area STARTED -->
-        <section class=" offer-area" id="section3">
+        <section class=" offer-area">
             <img src="assets/img/shape2.png" alt="">
             <div class="container">
                 <div class="row">
@@ -218,7 +218,7 @@
 
 
         <!-- VipRewards-area START -->
-        <section class=" viprewards-area" id="section4">
+        <section class=" viprewards-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -285,6 +285,22 @@
         <script src="assets/js/owl.carousel.min.js"></script> 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="assets/js/main.js"></script>   
- 
+ <script>
+ window.addEventListener('scroll', function() {
+    let sections = document.querySelectorAll('section');
+    let currentPosition = window.scrollY + window.innerHeight / 2;
+    
+    sections.forEach(function(section, index) {
+        let sectionTop = section.offsetTop;
+        let sectionBottom = sectionTop + section.offsetHeight;
+
+        if (currentPosition >= sectionTop && currentPosition <= sectionBottom) {
+            section.classList.add('visible_now')
+        }else{
+            section.classList.remove('visible_now')
+        }
+    });
+});
+ </script>
     </body>
 </html>
