@@ -757,12 +757,13 @@ img.hero-wrap-img {
 }
 
 .rewards-wrap ul li div:first-child {
-  padding: 5px;
+  padding: 7px;
   margin-right: -10px;
   z-index: 2;
 }
 
 .rewards-wrap ul li div:first-child:after {
+  display: none;
   content: "";
   position: absolute;
   width: 40px;
@@ -773,7 +774,13 @@ img.hero-wrap-img {
   transform: translateY(-50%);
   background-size: 100% 100%;
 }
-
+.rewards-wrap ul li div svg {
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 .rewards-wrap ul li div:last-child {
   background: #DDB440;
   color: #fff;
@@ -967,7 +974,7 @@ img.hero-wrap-img {
   position: absolute;
   width: 45%;
   left: 0;
-  height: 103%;
+  height: calc(100% + 30px);
   bottom: 0;
   background: #1F78FF;
   z-index: -2;
@@ -976,7 +983,7 @@ img.hero-wrap-img {
 .leaders-area:after {
   width: 265px;
   left: 50%;
-  height: 107%;
+  height: calc(100% + 60px);
   bottom: 0;
   background: #FCCC3F;
   border-radius: 10px 10px 0 0;

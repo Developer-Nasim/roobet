@@ -520,7 +520,8 @@ img.hero-wrap-img {
 .leaders-area img.bottom-shape {margin-top: 80px;}
 
 .leaders-area:after {
-    width: 115px;
+    width: 117px;
+    height: calc(100% + 40px);
 }
 
 .leading_rank > div:nth-child(2) {
@@ -571,9 +572,10 @@ img.hero-wrap-img {
 }
 .hero-slider:after, .hero-slider:before{
     display: none;
+} 
+.leaders-area:before{ 
+    height: calc(100% + 20px); 
 }
-
-
 
 
 }
