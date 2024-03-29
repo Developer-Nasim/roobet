@@ -386,11 +386,14 @@ section.hero-area:after {
   position: relative;
   padding: 150px 0px 220px;
   background: linear-gradient(0deg, #626691, #565A8B);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   z-index: 2;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   z-index: 8;
+  transition: .3s;
 }
-
+.howto-area.visible_now{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
 .howto-area > img {
   position: absolute;
   top: 25%;
@@ -429,6 +432,11 @@ section.offer-area {
   margin-top: -100px;
   overflow: hidden;
   background: linear-gradient(0deg, #02041D, #02041D, #1F78FF);
+  transition: .3s;
+}
+section.offer-area.visible_now{
+  padding-top: 100px;
+  margin-top: 0px;
 }
 section.offer-area:after {
   content: "";
@@ -1101,9 +1109,10 @@ section.leaderboard-roobet .viprewards-content h4 {
 /* Section-Animation */
 
 section {
-  transition: .3s;
+  margin-top: -37px;
+  transition: .5s;
   opacity: .2;
-  transform: scale(.5);
+  transform: scale(.9);
 }
 section.visible_now {
   opacity: 1;
