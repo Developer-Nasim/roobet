@@ -8,6 +8,27 @@
     $('.menuShadow').toggleClass('show');
   }); 
 
+  function AnimationOnScroll() { 
+    let sections = document.querySelectorAll('section');
+    if (sections.length > 0) { 
+        window.addEventListener('scroll', function() {
+            let currentPosition = window.scrollY + window.innerHeight / 2;
+            
+            sections.forEach(function(section, index) {
+                let sectionTop = section.offsetTop;
+                let sectionBottom = sectionTop + section.offsetHeight;
+
+                if (currentPosition >= sectionTop && currentPosition <= sectionBottom) {
+                    section.classList.add('visible_now')
+                }else{
+                    section.classList.remove('visible_now')
+                }
+            });
+
+        });  
+    }
+}
+AnimationOnScroll()
     
   // owlCarousel
   $(".howto-slider").owlCarousel({

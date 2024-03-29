@@ -856,8 +856,11 @@ img.hero-wrap-img {
   position: relative;
   z-index: 5;
   background: #D7930F;
+  margin-top: 50px;
+} 
+.leaders-area.visible_now{
+  margin-top: -40px;
 }
-
 .leaders-area img.bottom-shape {
   display: block;
   margin-left: auto;
@@ -1115,10 +1118,26 @@ section {
   transform: scale(.9);
 }
 section.visible_now {
+  margin-top: 0;
   opacity: 1;
   transform: scale(1);
 }
-
-
+.flotAnims{
+  animation: mymove 5s infinite;
+}
+.delay-03s{
+  animation-delay: .8s;
+}
+@keyframes mymove {
+  0%{
+    transform: rotate(0deg) scale(.9);
+  }
+  50%{
+    transform: rotate(10deg) scale(1.1);
+  }
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+}
 
 

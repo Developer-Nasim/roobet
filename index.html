@@ -228,9 +228,9 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="viprewards-wrap">
-                            <img src="assets/img/shape3.png" alt="" data-aos="fade-left">
+                            <img src="assets/img/shape3.png" alt="" class="flotAnims">
                             <div class="viprewards-content" data-aos="fade-right">
-                                <img src="assets/img/shape4.png" alt="">
+                                <img src="assets/img/shape4.png" alt="" class="flotAnims delay-03s">
                                 <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur</p>
                                 <a href="#" class="theme-btn">VIP REWARDS</a>
                             </div>
@@ -284,23 +284,6 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script> 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="assets/js/main.js"></script>   
- <script>
- window.addEventListener('scroll', function() {
-    let sections = document.querySelectorAll('section');
-    let currentPosition = window.scrollY + window.innerHeight / 2;
-    
-    sections.forEach(function(section, index) {
-        let sectionTop = section.offsetTop;
-        let sectionBottom = sectionTop + section.offsetHeight;
-
-        if (currentPosition >= sectionTop && currentPosition <= sectionBottom) {
-            section.classList.add('visible_now')
-        }else{
-            section.classList.remove('visible_now')
-        }
-    });
-});
- </script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
